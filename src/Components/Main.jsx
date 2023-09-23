@@ -11,7 +11,7 @@ const Main = () => {
 
 
   return (
-    <div className="flex flex-col w-full h-full px-5 pt-7 md:px-12 md:pt-4 lg:pt-7 items-center justify-center md:border-b-solid md:border-b-[1px] md:border-[#FFFFFF2E] relative">
+    <div className="flex flex-col w-full h-full px-5 max-w-[600px] md:max-w-[1020px] lg:max-w-[3000px] pt-7 md:px-24 md:pt-4 lg:pt-7 items-center justify-center md:border-b-solid md:border-b-[1px] md:border-[#FFFFFF2E] relative">
       
       <span class="star1"></span>
         <span class="span star2"></span>

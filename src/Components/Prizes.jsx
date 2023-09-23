@@ -22,7 +22,7 @@ const Prizes = () => {
         <span class="span star12"></span>
 
         <span class="span star13"></span>
-      <div className="w-full px-3">
+      <div className="w-full px-3 max-w-[600px] md:p-12 md:max-w-[1020px] lg:max-w-[3000px]">
         <div data-aos="fade-up" className="grid grid-cols-1 md:grid-cols-2">
           <div className="hidden md:block"></div>
           <div className="text-center md:text-start mb-7 md:mb-0">

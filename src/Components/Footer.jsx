@@ -25,7 +25,7 @@ const Footer = () => {
 
         <span class="span star13"></span>
         
-      <div className="grid grid-cols-1 md:grid-cols-2 md:gap-x-10 text-[#fff]">
+      <div className="grid grid-cols-1 md:grid-cols-2 md:gap-x-10 max-w-[600px] md:p-12 md:max-w-[1020px] lg:max-w-[3000px] text-[#fff]">
         <div className="flex flex-col h-full justify-between">
           <div className="space-y-3">
             <Link to='/'>

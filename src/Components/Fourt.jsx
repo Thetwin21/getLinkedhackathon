@@ -4,7 +4,7 @@ import img1 from "../images/8046554 1.svg";
 const Fourt = () => {
   return (
     <section className="flex w-full items-center justify-center px-5 md:px-12 py-12 border-b-solid border-b-[1px] my-10 border-[#FFFFFF2E]">
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-6 items-center ">
+      <div className="max-w-[600px] md:p-12 md:max-w-[1020px] lg:max-w-[3000px] grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-6 items-center ">
         <div data-aos="fade-up" className="w-full h-full relative mb-10 md:mb-0">
           <div className="absolute w-[180px] h-[180px] min-w-[180px] min-h-[180px] rounded-[100%] bg-gpink opacity-40 blur-2xl z-0 self-center m-auto left-[0] bottom-[-5%] md:bottom-[10%]"></div>
           <div className="relative w-full h-full">

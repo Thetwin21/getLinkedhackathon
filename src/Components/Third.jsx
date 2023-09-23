@@ -8,7 +8,7 @@ const Third = () => {
 
         <span class="span star12"></span>
 
-      <div className="flex flex-col-reverse md:grid md:grid-cols-2 gap-3 md:gap-6 items-center">
+      <div className="max-w-[600px] md:p-12 md:max-w-[1020px] lg:max-w-[3000px] flex flex-col-reverse md:grid md:grid-cols-2 gap-3 md:gap-6 items-center">
         <div data-aos="fade-right" className="text-[#fff] relative">
           <div className="absolute w-[300px] h-[300px] min-w-[300px] min-h-[300px] rounded-[100%] bg-gpink opacity-40 blur-2xl z-0 self-center m-auto left-[0] right-[0]"></div>
           <div className="relative z-10">

@@ -15,7 +15,7 @@ const Sponsors = () => {
 
         <span class="span star13"></span>
         
-      <div className="w-full flex flex-col justify-center gap-y-10">
+      <div className="w-full max-w-[600px] md:p-12 md:max-w-[1020px] lg:max-w-[3000px] flex flex-col justify-center gap-y-10">
         <div data-aos="fade-up" className="flex flex-col text-[#fff] text-center">
           <h3 className="text-2xl font-semibold ">Partners and Sponsors</h3>
           <p className="mt-3 text-base self-center max-w-[90%] md:max-w-[80%]">

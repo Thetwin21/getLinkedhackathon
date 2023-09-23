@@ -27,7 +27,7 @@ const Privacy = () => {
         
          <div className="absolute w-[150px] h-[150px] md:w-[250px] md:h-[250px] min-w-[150px] min-h-[150px] md:min-w-[250px] md:min-h-[250px] rounded-[100%] bg-gpink opacity-40 blur-2xl z-0  m-auto left-[-2%] bottom-[10%]"></div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 md:gap-10 w-full ">
+      <div className="grid grid-cols-1 md:grid-cols-2 md:gap-10 max-w-[600px] md:p-12 md:max-w-[1020px] lg:max-w-[3000px] w-full ">
         <div data-aos="fade-up" className="gap-y-5">
           <h3 className="text-2xl text-center md:text-start font-semibold text-[#fff]">
             Privacy Policy and

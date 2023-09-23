@@ -6,6 +6,7 @@ const Navar = () => {
   const [toggleOpen, setToggleOpen] = useState(false);
   return (
     <section className="flex fixed top-0 left-0 right-0 h-fit z-30 flex-col bg-bg md:flex-row w-full pb-1 mb-2 pt-7 md:py-7 justify-between px-5 md:px-12 md:items-center border-b-solid border-b-[1px] border-[#FFFFFF2E]">
+      
       <div className="flex justify-between items-center mb-7 md:mb-0">
         <Link to="/">
           <img className="w-[150px] md:w-[200px]" src={icon} alt={icon} />

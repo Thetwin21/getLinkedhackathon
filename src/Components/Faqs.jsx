@@ -7,7 +7,7 @@ const Faqs = () => {
   return (
     <section id="faqs" className="flex w-full relative md:mt-10 items-center justify-center px-5 md:px-12 py-10 border-b-solid border-b-[1px] border-[#FFFFFF2E]">
 
-      <div className="absolute w-[250px] h-[250px] min-w-[250px] min-h-[250px] rounded-[100%] bg-gpink opacity-40 blur-2xl z-0  m-auto right-0 top-[-20%]"></div>
+      <div className="absolute max-w-[600px] md:p-12 md:max-w-[1020px] lg:max-w-[3000px] w-[250px] h-[250px] min-w-[250px] min-h-[250px] rounded-[100%] bg-gpink opacity-40 blur-2xl z-0  m-auto right-0 top-[-20%]"></div>
 
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-6">

@@ -4,7 +4,7 @@ import ideas from "../images/The big idea.svg";
 const Second = () => {
   return (
     <section className="flex w-full items-center mt-7 md:mt-0  justify-center px-5 md:px-12 py-10 border-b-solid border-b-[1px] border-[#FFFFFF2E]">
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-6 items-center">
+      <div className="max-w-[600px] md:p-12 md:max-w-[1020px] lg:max-w-[3000px] grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-6 items-center">
       <div data-aos="fade-right" className="w-full h-full my-7">
         <img className="w-full h-full" src={ideas} alt={ideas} />
       </div>
