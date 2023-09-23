@@ -4,6 +4,7 @@ import man from "../images/man-wearing-smart-glasses-touching-virtual-screen 1 (
 import img1 from "../images/backimg.svg";
 import star from "../images/1f4a5.svg";
 import light from "../images/Creative 1.svg";
+import { Link } from "react-router-dom";
 
 
 const Main = () => {
