@@ -86,7 +86,7 @@ const Main = () => {
           </div>
         </div>
         <div className="h-full">
-          <div className="relative overflow-hidden h-full">
+          <div className="relative overflow-x-hidden h-full">
             <img
               className="z-10 absolute animate-rotating"
               src={img1}
