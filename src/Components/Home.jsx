@@ -14,6 +14,7 @@ import Footer from "./Footer";
 import Copyright from "./Copyright";
 import Loadingspin from "./Loadingspin";
 
+
 const Home = () => {
   const [isLoading, setIsLoading] = useState(true);
   useEffect(() => {

@@ -4,7 +4,6 @@ import axios from "axios";
 const Loginform = () => {
   
   const [loginLoading, setLoginLoading] = useState(false);
-  const [loginSuccess, setLoginSuccess] = useState(false);
 
   const [formData, setFormData] = useState({
     email: "",
