@@ -50,7 +50,7 @@ const Navar = () => {
       >
         <ul className="flex flex-col space-y-7 md:space-y-0 md:flex-row gap-x-7 text-[#fff] mb-[30px] md:justify-between">
           <li className="hover:border-b-[2px] border-[#D434FE] border-spacing-7 cursor-pointer">
-            <a>Timeline</a>
+            <span>Timeline</span>
           </li>
           <li className="hover:border-b-[2px] border-[#D434FE] border-spacing-7 cursor-pointer">
             <a href="#overview">Overview</a>
