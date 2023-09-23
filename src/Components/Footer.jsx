@@ -39,8 +39,8 @@ const Footer = () => {
             </p>
           </div>
           <div className="flex gap-x-3 items-center my-14 md:my-0 md:justify-self-end">
-            <span className="">
-              <a href="#">Terms of Use</a>
+            <span className="cursor-pointer">
+              Terms of Use
             </span>
             <span className="h-full w-[2px] max-h-[5px]: bg-pink"></span>
             <span>
@@ -53,13 +53,17 @@ const Footer = () => {
             <h3 className="text-pink text-base font-semibold">Useful Links</h3>
             <ul className="space-y-5 mt-5">
               <li>
-                <a href="#">Overview</a>
+                <span>Overview</span>
               </li>
               <li>
                 <a href="#timeline">Timeline</a>
               </li>
               <li>
-                <Link to='register'>
+                <Link to='#faqs'>FAQs
+                </Link>
+              </li>
+              <li>
+                <Link to='/register'>Register
                 </Link>
               </li>
               <div className="flex gap-3 items-center">
