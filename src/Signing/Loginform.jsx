@@ -2,6 +2,10 @@ import React, { useState } from "react";
 import axios from "axios";
 
 const Loginform = () => {
+  
+  const [loginLoading, setLoginLoading] = useState(false);
+  const [loginSuccess, setLoginSuccess] = useState(false);
+
   const [formData, setFormData] = useState({
     email: "",
     phone_number: "",
@@ -17,26 +21,31 @@ const Loginform = () => {
     });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async(e) => {
     e.preventDefault();
     const storedUser = JSON.parse(localStorage.getItem('user'));
     setFormData(storedUser.phone_number)
     if (storedUser && storedUser.email === formData.email ) {
-      axios
-        .post("https://backend.getlinked.ai/hackathon/contact-form", formData)
-        .then((response) => {
-          console.log("Registration successful:", response.data);
-          // Reset form after successful submission
-          setFormData({
-            email: "",
-            phone_number: "",
-            first_name: "",
-            message: "",
-          });
-        })
-        .catch((error) => {
-          console.error("Error sending message:", error);
-        });
+  
+        try {
+          axios
+          .post("https://backend.getlinked.ai/hackathon/contact-form", formData)
+          .then((response) => {
+            console.log("Registration successful:", response.data);
+            // Reset form after successful submission
+            setFormData({
+              email: "",
+              phone_number: "",
+              first_name: "",
+              message: "",
+            });
+          })
+          alert('message sumitted')
+        } catch (error) {
+          console.error(error.message);
+        } finally {
+          setLoginLoading(false);
+        }
     }else{
       alert('user not registre')
     }
@@ -78,8 +87,8 @@ const Loginform = () => {
         placeholder="Message"
       ></textarea>
       <div className="flex justify-center items-center">
-        <button className="bg-gradient-primary w-24 md:w-32 text-[#fff] rounded-sm py-3 cursor-pointer">
-          Register
+        <button disabled={loginLoading} className="bg-gradient-primary w-24 md:w-32 text-[#fff] rounded-sm py-3 cursor-pointer">
+          {loginLoading ? 'sending' : 'Submit'}
         </button>
       </div>
     </form>
