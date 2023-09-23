@@ -1,4 +1,4 @@
-import React, { useReducer, useRef, useState } from "react";
+import React, { useState } from "react";
 import axios from "axios";
 
 const Registerform = ({ setSuccess }) => {
@@ -16,7 +16,7 @@ const Registerform = ({ setSuccess }) => {
     const { name, value, type, checked } = e.target;
     setFormData({
       ...formData,
-      [name]: type == "checkbox" ? checked : value,
+      [name]: type === "checkbox" ? checked : value,
     });
   };
 

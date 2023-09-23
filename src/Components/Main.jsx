@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import React from "react";
 import chain from "../images/chain-9365116-7621444.svg";
 import man from "../images/man-wearing-smart-glasses-touching-virtual-screen 1 (30).svg";
 import img1 from "../images/backimg.svg";
