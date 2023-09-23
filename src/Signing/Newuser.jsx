@@ -11,7 +11,7 @@ const Newuser = () => {
   return (
     <section id="sign" className="flex flex-col w-full h-full   md:py-4 items-center justify-center text-[#fff]  relative">
      
-      <div className="w-full grid grid-cols-1 md:grid-cols-9 mt-7  px-5 pb-8 md:px-20 justify-between items-center relative">
+      <div className="w-full max-w-[600px] md:max-w-[1020px] lg:max-w-[3000px] grid grid-cols-1 md:grid-cols-9 mt-7  px-5 pb-8 md:px-20 justify-between items-center relative">
       <span class="star1"></span>
         <span class="span star2"></span>
         <span class="span star3"></span>

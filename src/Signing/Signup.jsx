@@ -10,7 +10,7 @@ const Signup = () => {
       id="log"
       className="flex flex-col w-full pb-4 h-full md:pt-7 items-center justify-center text-[#fff]"
     >
-      <div className="w-full grid grid-cols-1 px-5 md:px-20  md:grid-cols-2 mt-7  justify-between items-center relative">
+      <div className="w-full grid grid-cols-1 px-5 md:px-20 max-w-[600px] md:max-w-[1020px] lg:max-w-[3000px] md:grid-cols-2 mt-7  justify-between items-center relative">
         <span class="star1"></span>
         <span class="span star2"></span>
         <span class="span star3"></span>
