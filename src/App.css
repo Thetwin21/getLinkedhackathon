@@ -1,0 +1,359 @@
+#home::before,
+#sign::before,
+#log::before
+ {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100px;
+}
+
+
+
+.linec {
+  position: relative;
+}
+.linec::after {
+  content: "";
+  width: 100%;
+  height: 15px;
+  background-image: url("../src/images/Vector\ 4.png");
+  position: absolute;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  bottom: -10px;
+  left: 0;
+  overflow: hidden;
+  animation: writin 3s infinite linear;
+}
+
+@keyframes writin {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@media (max-width: 767px) {
+  /* drop icon */
+  .openmenu {
+    display: block;
+    height: fit-content;
+    padding: 20px;
+    top: 50px;
+
+    /* overflow-y: ; */
+    transition: all;
+    margin-top: 0;
+    position: absolute;
+    margin-top: 100px;
+    left: 0px;
+    /* margin: 0 0 5px; */
+    top: 0;
+  }
+}
+
+/* Icon toggle */
+
+#nav-icon {
+  width: 30px;
+  height: 40px;
+  position: relative;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: 0.5s ease-in-out;
+  -moz-transition: 0.5s ease-in-out;
+  -o-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  overflow-y: hidden;
+  cursor: pointer;
+}
+
+#nav-icon .spannav {
+  display: block;
+  position: absolute;
+  height: 5px;
+  width: 50%;
+  background: #ffffff;
+  border-radius: 9px;
+  opacity: 1;
+  /* left: 0; */
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: 0.25s ease-in-out;
+  -moz-transition: 0.25s ease-in-out;
+  -o-transition: 0.25s ease-in-out;
+  transition: 0.25s ease-in-out;
+}
+
+#nav-icon .spannav:nth-child(1) {
+  top: 0px;
+  left: 0px;
+}
+
+#nav-icon .spannav:nth-child(2) {
+  top: 10px;
+  width: 100%;
+}
+
+#nav-icon .spannav:nth-child(3) {
+  top: 20px;
+  right: 0px;
+}
+
+#nav-icon.open {
+  border-radius: 50%;
+  border-right: 2px solid #903aff;
+  border-left: 2px solid #ff26b9;
+}
+#nav-icon.open .spannav {
+  width: 100%;
+}
+#nav-icon.open .spannav:nth-child(1) {
+  top: 18px;
+  height: 6px;
+  -webkit-transform: rotate(135deg);
+  -moz-transform: rotate(135deg);
+  -o-transform: rotate(135deg);
+  transform: rotate(135deg);
+}
+
+#nav-icon.open .spannav:nth-child(2) {
+  opacity: 0;
+  left: -60px;
+}
+
+#nav-icon.open .spannav:nth-child(3) {
+  top: 18px;
+  height: 6px;
+  -webkit-transform: rotate(-135deg);
+  -moz-transform: rotate(-135deg);
+  -o-transform: rotate(-135deg);
+  transform: rotate(-135deg);
+}
+
+/* login styling */
+textarea {
+  width: 100%;
+  height: 100px;
+  /* padding: 12px 20px; */
+  box-sizing: border-box;
+  /* border: 2px solid #ccc; */
+  /* background-color: #f8f8f8; */
+  font-size: 16px;
+  resize: none;
+}
+label {
+  font-size: medium;
+}
+
+button {
+  border-radius: 4px;
+  /* box-shadow: ; */
+}
+
+.staring {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: ease all 0.5s;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.sky_bg {
+  background: transparent;
+}
+
+
+/* queries for stars */
+.span {
+  position: absolute;
+  height: 30px;
+  width: 30px;
+  z-index: 1;
+  clip-path: polygon(
+    50% 0%,
+    52% 37%,
+    98% 35%,
+    56% 44%,
+    79% 91%,
+    51% 48%,
+    21% 91%,
+    44% 45%,
+    2% 35%,
+    46% 38%
+  );
+}
+
+.star1 {
+  transform: rotate(20deg);
+  position: absolute;
+  background-color: white;
+  top: 50px;
+  right: 30px;
+  animation: pulsate 0.3s ease-in-out infinite;
+  z-index: 0;
+}
+.star2 {
+  transform: rotate(-20deg);
+  position: absolute;
+  background-color: #d434fe;
+  top: 228px;
+  right: 157px;
+  animation: pulsate 0.3s ease-in-out infinite;
+  z-index: 0;
+}
+.star3 {
+  transform: rotate(40deg);
+  position: absolute;
+  background-color: #903aff;
+  top: 530px;
+  right: 777px;
+  animation: pulsate 0.3s ease-in-out infinite;
+  z-index: 0;
+}
+.star4 {
+  transform: rotate(60deg);
+  position: absolute;
+  background-color: white;
+  top: 270px;
+  right: 786px;
+  animation: pulsate 0.3s ease-in-out infinite;
+  z-index: 0;
+}
+.star5 {
+  transform: rotate(80deg);
+  position: absolute;
+  background-color: #d434fe;
+  top: 375px;
+  right: 1086px;
+  animation: pulsate 0.3s ease-in-out infinite;
+  z-index: 0;
+}
+.star6 {
+  transform: rotate(100deg);
+  position: absolute;
+  background-color: #903aff;
+  top: 225px;
+  right: 474px;
+  animation: pulsate 0.3s ease-in-out infinite;
+  z-index: 0;
+}
+.star7 {
+  transform: rotate(120deg);
+  position: absolute;
+  background-color: white;
+  top: 423px;
+  right: 475px;
+  animation: pulsate 0.3s ease-in-out infinite;
+  z-index: 0;
+}
+.star8 {
+  transform: rotate(150deg);
+  position: absolute;
+  background-color: #d434fe;
+  top: 600px;
+  right: 1240px;
+  animation: pulsate 0.3s ease-in-out infinite;
+  z-index: 0;
+}
+.star9 {
+  transform: rotate(180deg);
+  position: absolute;
+  background-color: #903aff;
+  top: 38px;
+  right: 315px;
+  animation: pulsate 0.3s ease-in-out infinite;
+  z-index: 0;
+}
+.star10 {
+  transform: rotate(200deg);
+  position: absolute;
+  background-color: #903aff;
+  top: 605px;
+  right: 206px;
+  animation: pulsate 0.3s ease-in-out infinite;
+  z-index: 0;
+}
+.star11 {
+  transform: rotate(150deg);
+  position: absolute;
+  background-color: #d434fe;
+  top: 108px;
+  right: 597px;
+  animation: pulsate 0.3s ease-in-out infinite;
+  z-index: 0;
+}
+.star12 {
+  transform: rotate(180deg);
+  position: absolute;
+  background-color: white;
+  top: 63px;
+  right: 905px;
+  animation: pulsate 0.3s ease-in-out infinite;
+  z-index: 0;
+}
+.star13 {
+  transform: rotate(200deg);
+  position: absolute;
+  background-color: #903aff;
+  top: 74px;
+  right: 1139px;
+  animation: pulsate 0.3s ease-in-out infinite;
+  z-index: 0;
+}
+
+/* blinking star animation */
+@keyframes pulsate {
+  0% {
+    clip-path: polygon(
+      50% 0%,
+      52% 37%,
+      98% 35%,
+      56% 44%,
+      79% 91%,
+      51% 48%,
+      21% 91%,
+      44% 45%,
+      2% 35%,
+      46% 38%
+    );
+  }
+  50% {
+    clip-path: polygon(
+      48% 21%,
+      53% 41%,
+      72% 40%,
+      54% 45%,
+      61% 57%,
+      49% 45%,
+      39% 59%,
+      43% 45%,
+      27% 40%,
+      46% 40%
+    );
+  }
+  100% {
+    clip-path: polygon(
+      50% 0%,
+      52% 37%,
+      98% 35%,
+      56% 44%,
+      79% 91%,
+      51% 48%,
+      21% 91%,
+      44% 45%,
+      2% 35%,
+      46% 38%
+    );
+  }
+}
