@@ -61,9 +61,9 @@ const Main = () => {
               Participate in getlinked tech Hackathon 2023 stand a chance to win
               a Big prize
             </p>
-            <button className="bg-gradient-primary w-24 md:w-32 my-7 text-[#fff] rounded-sm py-3 ">
+            <Link to='/register'><button className="bg-gradient-primary w-24 md:w-32 my-7 text-[#fff] rounded-sm py-3 ">
               Register
-            </button>
+            </button></Link>
             <div className="my-10">
               <div className="flex mt-5 gap-x-4">
                 <span>
