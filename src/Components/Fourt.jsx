@@ -21,16 +21,16 @@ const Fourt = () => {
           </div>
         </div>
 
-        <div data-aos="fade-left" className="text-[#fff] text-center md:text-start">
-          <h3 className="text-2xl font-semibold">Judging Criteria</h3>
-          <h3 className="text-2xl text-pink font-semibold ">Key attributes</h3>
-          <p className="mt-3">
+        <div className="text-[#fff] text-center md:text-start">
+          <h3 data-aos="fade-left" className="text-2xl font-semibold">Judging Criteria</h3>
+          <h3 data-aos="fade-left" className="text-2xl text-pink font-semibold ">Key attributes</h3>
+          <p data-aos="fade-left" className="mt-3">
             <span className="text-[#FF26B9]">Innovation and Creativity: </span>
             Evaluate the uniqueness and creativity of the solution. Consider
             whether it addresses a real-world problem in a novel way or
             introduces innovative features.
           </p>
-          <p className="mt-3">
+          <p data-aos="fade-left" className="mt-3">
             <span className="text-[#FF26B9]">
               Innovation and Functionality:{" "}
             </span>
@@ -38,7 +38,7 @@ const Fourt = () => {
             functions effectively and without major issues? Judges would
             consider the completeness and robustness of the solution.
           </p>
-          <p className="mt-3">
+          <p data-aos="fade-left" className="mt-3">
             <span className="text-[#FF26B9]">
               Innovation and Impact and Relevance:{" "}
             </span>
@@ -47,7 +47,7 @@ const Fourt = () => {
             target audience? Judges would assess the potential social, economic,
             or environmental benefits.
           </p>
-          <p className="mt-3">
+          <p data-aos="fade-left" className="mt-3">
             <span className="text-[#FF26B9]">
               Innovation and Adherence to Hackathon Rules:{" "}
             </span>
@@ -58,7 +58,7 @@ const Fourt = () => {
             addresses a real-world problem in a novel way or introduces
             innovative features.
           </p>
-          <button className="bg-gradient-primary w-24 md:w-32 my-7 text-[#fff] rounded-sm py-3 ">
+          <button data-aos="fade-left" className="bg-gradient-primary w-24 md:w-32 my-7 text-[#fff] rounded-sm py-3 ">
             Read More
           </button>
         </div>

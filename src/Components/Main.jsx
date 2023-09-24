@@ -45,10 +45,10 @@ const Main = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 md:gap-x-3 pt-14 md:pt-0">
         <div className="w-full relative pb-0 md:pb-10 md:mb-0 text-center md:text-start">
           <div className="absolute w-[280px] h-[280px] min-w-[280px] min-h-[280px] rounded-[100%] bg-gpink opacity-40 blur-2xl z-0 self-center m-auto left-[50%]"></div>
-          <div data-aos="fade-right" className="space-y-7 relative text-[#fff] z-10">
+          <div className="space-y-7 relative text-[#fff] z-10">
             <div className="flex flex-col gap-y-3 justify-center w-full items-center md:items-start md:justify-start">
-              <h2 className="text-4xl md:text-4xl lg:text-5xl font-bold flex flex-nowrap">getlinked T<span className="relative"><img className="absolute top-[-50%] right-[-30%] z-10" src={light} alt={light} />e</span>ch</h2>
-              <h2 className="flex text-4xl md:text-4xl lg:text-6xl font-bold md:items-end">
+              <h2 data-aos="fade-right" className="text-4xl md:text-4xl lg:text-5xl font-bold flex flex-nowrap">getlinked T<span className="relative"><img className="absolute top-[-50%] right-[-30%] z-10" src={light} alt={light} />e</span>ch</h2>
+              <h2 data-aos="fade-right" className="flex text-4xl md:text-4xl lg:text-6xl font-bold md:items-end">
                 Hackathon <span className="text-[#D434FE]">1.0</span>{" "}
                 <img className="w-10 md:w-16" src={chain} alt={chain} />
                 <img
@@ -58,14 +58,14 @@ const Main = () => {
                 />
               </h2>
             </div>
-            <p className="text-base md:max-w-lg">
+            <p data-aos="fade-right" className="text-base md:max-w-lg">
               Participate in getlinked tech Hackathon 2023 stand a chance to win
               a Big prize
             </p>
-            <Link to='/register'><button className="bg-gradient-primary w-24 md:w-32 my-7 text-[#fff] rounded-sm py-3 ">
+            <Link data-aos="fade-right" to='/register'><button className="bg-gradient-primary w-24 md:w-32 my-7 text-[#fff] rounded-sm py-3 ">
               Register
             </button></Link>
-            <div className="my-10">
+            <div  data-aos="fade-right" className="my-10">
               <div className="flex mt-5 gap-x-4">
                 <span>
                   <p className="text-[#fff] text-2xl">

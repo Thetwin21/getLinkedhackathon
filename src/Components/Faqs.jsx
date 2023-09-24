@@ -11,16 +11,16 @@ const Faqs = () => {
 
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-6">
-        <div data-aos="fade-right" className="text-[#fff] ">
+        <div className="text-[#fff] ">
           <div className="">
             <h3 className="text-2xl font-semibold text-center md:text-start">Frequently Ask</h3>
-            <h3 className="text-2xl text-pink font-semibold text-center md:text-start ">Question</h3>
-            <p className="mt-3 text-base text-center md:text-start">
+            <h3 data-aos="fade-right" className="text-2xl text-pink font-semibold text-center md:text-start ">Question</h3>
+            <p data-aos="fade-right" className="mt-3 text-base text-center md:text-start">
               We got answers to the questions that you might want to ask about
               getlinked Hackathon 1.0
             </p>
             <div className="w-full mt-10 space-y-5">
-              <div className="flex justify-between items-center cursor-pointer border-b-solid border-b-[1px] border-[#D434FE] border-spacing-[15px] py-3">
+              <div data-aos="fade-right" className="flex justify-between items-center cursor-pointer border-b-solid border-b-[1px] border-[#D434FE] border-spacing-[15px] py-3">
                 <p className="text-sm">
                   Can I work on a project I started before the hackathon?
                 </p>
@@ -28,7 +28,7 @@ const Faqs = () => {
                   <IoIosAdd className={"text-[#D434FE]"} />
                 </span>
               </div>
-              <div className="flex justify-between items-center cursor-pointer border-b-solid border-b-[1px] border-[#D434FE] border-spacing-[15px] py-3">
+              <div data-aos="fade-right" className="flex justify-between items-center cursor-pointer border-b-solid border-b-[1px] border-[#D434FE] border-spacing-[15px] py-3">
                 <p className="text-sm">
                   What happens if I need help during the hackathon?
                 </p>
@@ -36,7 +36,7 @@ const Faqs = () => {
                   <IoIosAdd className={"text-[#D434FE]"} />
                 </span>
               </div>
-              <div className="flex justify-between items-center cursor-pointer border-b-solid border-b-[1px] border-[#D434FE] border-spacing-[15px] py-3">
+              <div data-aos="fade-right" className="flex justify-between items-center cursor-pointer border-b-solid border-b-[1px] border-[#D434FE] border-spacing-[15px] py-3">
                 <p className="text-sm">
                   What happens if I don't have an idea for a project?
                 </p>
@@ -44,7 +44,7 @@ const Faqs = () => {
                   <IoIosAdd className={"text-[#D434FE]"} />
                 </span>
               </div>
-              <div className="flex justify-between items-center cursor-pointer border-b-solid border-b-[1px] border-[#D434FE] border-spacing-[15px] py-3">
+              <div data-aos="fade-right" className="flex justify-between items-center cursor-pointer border-b-solid border-b-[1px] border-[#D434FE] border-spacing-[15px] py-3">
                 <p className="text-sm">
                   Can I join a team or do I have to come with one?
                 </p>
@@ -52,13 +52,13 @@ const Faqs = () => {
                   <IoIosAdd className={"text-[#D434FE]"} />
                 </span>
               </div>
-              <div className="flex justify-between items-center cursor-pointer border-b-solid border-b-[1px] border-[#D434FE] border-spacing-[15px] py-3">
+              <div data-aos="fade-right" className="flex justify-between items-center cursor-pointer border-b-solid border-b-[1px] border-[#D434FE] border-spacing-[15px] py-3">
                 <p className="text-sm">What happens after the hackathon ends</p>
                 <span>
                   <IoIosAdd className={"text-[#D434FE]"} />
                 </span>
               </div>
-              <div className="flex justify-between items-center cursor-pointer border-b-solid border-b-[1px] border-[#D434FE] border-spacing-[15px] py-3">
+              <div data-aos="fade-right" className="flex justify-between items-center cursor-pointer border-b-solid border-b-[1px] border-[#D434FE] border-spacing-[15px] py-3">
                 <p className="text-sm">
                   Can I work on a project I started before the hackathon?
                 </p>

@@ -8,10 +8,10 @@ const Second = () => {
       <div data-aos="fade-right" className="w-full h-full my-7">
         <img className="w-full h-full" src={ideas} alt={ideas} />
       </div>
-      <div data-aos="fade-left" className="text-[#fff] ">
-        <h3 className="text-2xl font-semibold text-center md:text-start">Introduction to getlinked </h3>
+      <div className="text-[#fff] ">
+        <h3 data-aos="fade-left" className="text-2xl font-semibold text-center md:text-start">Introduction to getlinked </h3>
         <h3 className="text-2xl text-pink font-semibold text-center md:text-start">tech Hackathon 1.0</h3>
-        <p className="mt-3">
+        <p data-aos="fade-left" className="mt-3">
           Our tech hackathon is a melting pot of visionaries, and its purpose is
           as clear as day: to shape the future. Whether you're a coding genius,
           a design maverick, or a concept wizard, you'll have the chance to

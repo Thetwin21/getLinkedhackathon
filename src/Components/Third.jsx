@@ -9,12 +9,12 @@ const Third = () => {
         <span class="span star12"></span>
 
       <div className="max-w-[600px] md:p-12 md:max-w-[1020px] lg:max-w-[3000px] flex flex-col-reverse md:grid md:grid-cols-2 gap-3 md:gap-6 items-center">
-        <div data-aos="fade-right" className="text-[#fff] relative">
+        <div className="text-[#fff] relative">
           <div className="absolute w-[300px] h-[300px] min-w-[300px] min-h-[300px] rounded-[100%] bg-gpink opacity-40 blur-2xl z-0 self-center m-auto left-[0] right-[0]"></div>
           <div className="relative z-10">
-            <h3 className="text-2xl font-semibold text-center md:text-start">Rules and </h3>
-            <h3 className="text-2xl text-pink font-semibold text-center md:text-start">Guidelines</h3>
-            <p className="mt-3">
+            <h3 data-aos="fade-right" className="text-2xl font-semibold text-center md:text-start">Rules and </h3>
+            <h3 data-aos="fade-right" className="text-2xl text-pink font-semibold text-center md:text-start">Guidelines</h3>
+            <p data-aos="fade-right" className="mt-3">
               Our tech hackathon is a melting pot of visionaries, and its
               purpose is as clear as day: to shape the future. Whether you're a
               coding genius, a design maverick, or a concept wizard, you'll have
