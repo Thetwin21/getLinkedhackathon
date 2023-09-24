@@ -2,8 +2,6 @@ import React, { useState } from "react";
 import axios from "axios";
 
 const Registerform = ({ setSuccess }) => {
-  
-  const [registrationLoading, setRegistrationLoading] = useState(false);
   const [formData, setFormData] = useState({
     email: "",
     phone_number: "",
@@ -22,11 +20,9 @@ const Registerform = ({ setSuccess }) => {
     });
   };
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
-    setRegistrationLoading(true);
-    try {
-      axios
+    axios
       .post("https://backend.getlinked.ai/hackathon/registration", formData)
       .then((response) => {
         console.log("Registration successful:", response.data);
@@ -43,11 +39,9 @@ const Registerform = ({ setSuccess }) => {
         });
         setSuccess(true);
       })
-    } catch (error) {
-      console.error('Registration failed:', error);
-    } finally {
-    setRegistrationLoading(false);
-    }
+      .catch((error) => {
+        console.error("Error registering contact:", error);
+      });
   };
 
   return (
@@ -117,8 +111,6 @@ const Registerform = ({ setSuccess }) => {
             <option value={1}>1</option>
             <option value={2}>2</option>
             <option value={3}>3</option>
-            <option value={4}>4</option>
-            <option value={5}>5</option>
           </select>
         </div>
         <div className="flex flex-col gap-y-2 ">
@@ -152,8 +144,8 @@ const Registerform = ({ setSuccess }) => {
         </span>
       </div>
       <div className="flex justify-center items-center">
-      <button disabled={registrationLoading} className="bg-gradient-primary w-24 md:w-32 text-[#fff] rounded-sm py-3 cursor-pointer" type="submit">
-      {registrationLoading ? 'Registering...' : 'Register'}
+      <button className="bg-gradient-primary w-24 md:w-32 text-[#fff] rounded-sm py-3 cursor-pointer" type="submit">
+        Register
       </button>
       </div>
    
