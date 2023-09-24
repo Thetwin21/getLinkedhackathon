@@ -47,7 +47,7 @@ const Main = () => {
           <div className="absolute w-[280px] h-[280px] min-w-[280px] min-h-[280px] rounded-[100%] bg-gpink opacity-40 blur-2xl z-0 self-center m-auto left-[50%]"></div>
           <div data-aos="fade-right" className="space-y-7 relative text-[#fff] z-10">
             <div className="flex flex-col gap-y-3 justify-center w-full items-center md:items-start md:justify-start">
-              <h2 className="text-4xl md:text-4xl lg:6xl font-bold flex flex-nowrap">getlinked T<span className="relative"><img className="absolute top-[-50%] right-[-30%] z-10" src={light} alt={light} />e</span>ch</h2>
+              <h2 className="text-4xl md:text-4xl lg:text-5xl font-bold flex flex-nowrap">getlinked T<span className="relative"><img className="absolute top-[-50%] right-[-30%] z-10" src={light} alt={light} />e</span>ch</h2>
               <h2 className="flex text-4xl md:text-4xl lg:text-6xl font-bold md:items-end">
                 Hackathon <span className="text-[#D434FE]">1.0</span>{" "}
                 <img className="w-10 md:w-16" src={chain} alt={chain} />
@@ -87,7 +87,7 @@ const Main = () => {
           </div>
         </div>
         <div className="h-full relative pt-6 md:pt-0">
-          <div className=" h-full">
+          <div className=" h-full overflow-hidden">
             <img
               className="z-10 absolute animate-rotating"
               src={img1}
